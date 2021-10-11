@@ -5,7 +5,7 @@ import pandas as pd
 import streamlit as st
 
 """
-# :heart: I love NiuNiu :heart:
+# :heart: NiuNiu loves Me :heart:
 """
 
 
@@ -27,5 +27,5 @@ with st.echo(code_location='below'):
         data.append(Point(x, y))
 
     st.altair_chart(alt.Chart(pd.DataFrame(data), height=500, width=500)
-        .mark_circle(color='#e61547', opacity=0.5)
+        .mark_circle(color='#EE82EE', opacity=0.5)
         .encode(x='x:Q', y='y:Q'))
