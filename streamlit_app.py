@@ -33,5 +33,5 @@ with st.echo(code_location='below'):
     df = pd.DataFrame(
         np.random.randn(50, 20),
         columns=('col %d' % i for i in range(20)))
-    st.dataframe(df,height=1)  # Same as st.write(df)
+    st.dataframe(df,height=50)  # Same as st.write(df)
     
