@@ -2,3 +2,5 @@ altair
 pandas
 streamlit
 numpy
+datetime 
+requests
