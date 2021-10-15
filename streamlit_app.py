@@ -35,4 +35,4 @@ with st.echo(code_location='below'):
         columns=('col %d' % i for i in range(20)))
     st.dataframe(df,height=999)  # Same as st.write(df)
     
-    st.table(df)
+#     st.table(df) # table can't do sort
