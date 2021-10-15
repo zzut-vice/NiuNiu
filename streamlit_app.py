@@ -29,3 +29,9 @@ with st.echo(code_location='below'):
     st.altair_chart(alt.Chart(pd.DataFrame(data), height=500, width=500)
         .mark_circle(color='#EE82EE', opacity=0.5)
         .encode(x='x:Q', y='y:Q'))
+
+    df = pd.DataFrame(
+        np.random.randn(50, 20),
+        columns=('col %d' % i for i in range(20)))
+    st.dataframe(df)  # Same as st.write(df)
+
